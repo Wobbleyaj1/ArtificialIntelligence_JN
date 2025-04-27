@@ -1,0 +1,13 @@
+The Chatbot class is defined, which loads responses from a file and provides methods for responding to user input.
+
+The load_responses method reads response data from a file named responses.txt. Each line in the file should contain keyword(s) followed by a colon and response(s) separated by commas.
+
+The respond method processes user input, finds the first occurring keyword(s), and selects a response associated with the keyword(s).
+
+Various helper methods (format_input_text, find_keyword_positions, get_first_keyword, get_responses_for_first_keyword, choose_response) assist in the response selection process.
+
+The main function initializes an instance of the Chatbot class and continuously prompts the user for input until they type 'bye'.
+
+The additional functionality that I added includes:
+	A large variety of conversation options
+	The ability to list keywords by saying 'help'

@@ -1,0 +1,63 @@
+1.	GetPiles Function
+Purpose: Request a positive amount of chips for three piles from the user and return the input as a list.
+Algorithm: 
+Prompt the user to enter a positive number of chips for piles A, B, and C.
+Validate the input to ensure it consists of valid positive integers.
+Return the list of pile sizes.
+
+2.	unsafeMoves Function
+Purpose: Read from a file named 'unsafe.start' to get a list of unsafe moves.
+Algorithm:
+Open the 'unsafe.start' file in read mode.
+Read each line from the file, split it into integers, and append it to a list.
+Return the list of unsafe moves.
+
+3.	nextMoves Function
+Purpose: Find and return the next possible moves given the current state of the piles.
+Algorithm:
+For each pile, try removing 1, 2, or 3 chips and check if the resulting state is valid.
+If valid, append the new state to a list of next possible moves.
+Return the list of next possible moves.
+
+4.	updateUnsafe Function
+Purpose: Update the 'unsafe.start' file with new unsafe moves.
+Algorithm:
+Generate a list of potential moves by adding 1, 2, or 3 chips to each pile.
+Append only the valid moves that are not already in the unsafe list.
+Sort the updated unsafe list and overwrite the 'unsafe.start' file with the new list.
+
+5.	determineWinner Function
+Purpose: Determine the winner based on the player who made the last move.
+Algorithm:
+If the last move was made by the "Human" player, return "Human" as the winner; otherwise, return "Machine".
+
+6.	HumanMove Function
+Purpose: Get the pile choice and the number of chips to remove from the user.
+Algorithm:
+Prompt the user to enter the pile letter (A, B, C) and the number of chips to remove.
+Validate the input and update the pile list accordingly.
+Print the move and the updated pile state.
+
+7.	MachineMove Function
+Purpose: Determine the computer's move based on intelligence and learning algorithms.
+Algorithm:
+Get the list of next possible moves and the list of unsafe moves.
+Choose the first valid move from the list of next possible moves.
+If no valid moves are found, update the unsafe list and choose the first move.
+Determine the pile choice and the number of chips to remove.
+Update the pile list and print the move and the updated pile state.
+
+8.	Play Function
+Purpose: Control the flow of gameplay between the human and the machine.
+Algorithm:
+Print the initial state of the piles.
+Determine which player starts the game based on user input.
+Alternate between the human and the machine making moves until all piles are empty.
+Determine the winner and print the result.
+
+9.	Main Program Execution
+Purpose: Start the game and allow the user to play multiple times.
+Algorithm:
+Continuously ask the user if they want to play the game again.•	If yes, get the initial pile sizes and start the game; otherwise, exit the program.
+If yes, get the initial pile sizes and start the game; otherwise, exit the program.
+

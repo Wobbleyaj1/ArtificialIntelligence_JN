@@ -1,0 +1,23 @@
+a.
+
+1) N = 4
+2) N = 10
+3) N = [4,3,2,1]
+
+b.
+
+Solution path is:
+state(w,w,w,w) #Start
+state(e,w,e,w) #Farmer takes goat to east bank
+state(w,w,e,w) #Farmer returns to west bank
+state(e,e,e,w) #Farmer takes wolf to east bank
+state(w,e,w,w) #Farmer returns to west bank with goat
+state(e,e,w,e) #Farmer takes cabbage to east bank
+state(w,e,w,e) #Farmer returns to west bank
+state(e,e,e,e) #Farmer takes goat to east bank
+
+c.
+
+Back tracking is a technique used to continue finding a solution when a dead end is hit. When a dead end or invalid state in this case is reached, backtracking is used to return to a state that doesn't lead to that state.
+
+d. There are three married couples who want to cross a river using a boat that can only hold two people at a time. The goal is to find a sequence of moves that allows all six individuals to cross the river without leaving any wife with another man without them  on either side of the river.

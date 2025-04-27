@@ -1,0 +1,9 @@
+(a) The Sudoku board is being implemented using a two dimensional vector named Grid. The characters in this vector are obtained through pulling rows from an input file.
+
+(b) The keyword 'protected' allows subclasses to utilize a method or property while 'private' only allows access to the class.
+
+(c) I found four base cases. 1) check if the grid exists. 2) When it finishes filling in all values. 3) When it finds a successful value. 4) If unsuccessful in finding a value for a location.
+
+(d) It checks all values for a cell and when by recursively calling itself to explore the possible solutions for the puzzle. If the call doesn't lead to a solution it resets the cell to its original value. It will get exponentially slower the larger the puzzle gets.
+
+(e) The neural network understands the cells in the 9x9 Sudoku grid as a graph with nodes that could communicate with each other. To train the model, the researchers generated a dataset containing 216,000 puzzles of varying difficulty. The puzzles were all solved and split into a training, validation and test set.

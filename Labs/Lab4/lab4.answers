@@ -1,0 +1,42 @@
+I.
+
+Prolog is short for "Programming Logic"
+1. It is sunny
+2. John is Mary's father.
+3. Susan is Peter's Mother.
+
+II.
+
+?- parent(susan, mary). 
+nes
+Susan is Mary's parent.
+
+?- parent(ray, peter).
+no
+Ray is not Peter's parent.
+
+?- yeye(X, peter).
+X = david
+David is Peter's yeye.
+
+?- gunggung(X, Y).
+X = jack
+Y = peter
+Jack is Peter's gunggung.
+
+III.
+
+| ?- is_in_room(Class, wsc100).
+Class = csc480 
+yes
+csc480 is the class in wsc100.
+
+| ?- is_in_class(toby, Class).
+Class = csc380
+yes
+toby is in csc380.
+
+| ?- is_hot(Person).
+Person = toby
+yes
+toby is hot.

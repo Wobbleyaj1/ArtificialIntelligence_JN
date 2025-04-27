@@ -1,0 +1,225 @@
+Script started on Mon 01 Apr 2024 06:14:30 PM EDT
+]0;nipper_jj@cobra:~/CSC380/Projects/Prog3[?1034h[nipper_jj@cobra Prog3]$ vim reviewAnalysis.py[4@python3[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K.py[4Pvim[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kvim reviewAnalysis.py[K[[Kpython3 main.py
+The doctor is in.
+
+ - hi
+
+How can I assist you today?
+ - i am a little tired
+
+How long have you been a little tired?
+ - i feel like its been a while  
+
+Do you enjoy feeling like its been a while?
+ - yes and no
+
+Why do you think so?
+ - im getting older
+
+How long have you been getting older?
+ - haha
+
+
+That is quite interesting.
+ - i thats a conflict
+
+How do you handle conflicts with others?
+ - empathy and forgiveness
+
+What role does empathy play in your relationships?
+ - i must go  . bye1 !
+
+Goodbye!
+]0;nipper_jj@cobra:~/CSC380/Projects/Prog3[nipper_jj@cobra Prog3]$ car [K[Kt README
+The Chatbot class is defined, which loads responses from a file and provides methods for responding to user input.
+
+The load_responses method reads response data from a file named responses.txt. Each line in the file should contain keyword(s) followed by a colon and response(s) separated by commas.
+
+The respond method processes user input, finds the first occurring keyword(s), and selects a response associated with the keyword(s).
+
+Various helper methods (format_input_text, find_keyword_positions, get_first_keyword, get_responses_for_first_keyword, choose_response) assist in the response selection process.
+
+The main function initializes an instance of the Chatbot class and continuously prompts the user for input until they type 'bye'.
+
+]0;nipper_jj@cobra:~/CSC380/Projects/Prog3[nipper_jj@cobra Prog3]$ car[Kt [K[Kt responses.txt
+always: Can you think of a specific example?
+because: Is that the real reason?
+sorry: Please don't apologize.
+maybe: You don't seem very certain.
+i think: Do you really think so?
+you: We were discussing you not me.
+yes: Why do you think so?, You seem quite positive.
+no: Why not?, Are you sure?
+i am, im: I am sorry to hear you are *., How long have you been *?, Do you believe it is normal to be *?, Do you enjoy being *?
+i feel: Tell me more about such feelings., Do you often feel *?, Do you enjoy feeling *?, Why do you feel that way?
+family: Tell me more about your family., How do you get along with your family?, Is your family important to you?
+dream: What does that dream suggest to you?, Do you dream often?, What persons appear in your dreams?, Are you disturbed by your dreams?
+love: Tell me more about love., Do you believe in love at first sight?, What does love mean to you?
+hate: What do you dislike about it?, What makes you feel that way?, Why do you hate it?
+happy: What made you happy?, How do you define happiness?, Describe a time when you felt happiest.
+sad: What's been troubling you?, How can I help you feel better?, Would you like to talk about it?
+excited: What are you excited about?, Tell me more about your excitement., Why do you feel excited?
+angry: What's upsetting you?, How can I help you calm down?, Would you like to vent about it?
+confused: What's confusing you?, Let's try to clarify things together., Is there something specific you're unsure about?
+surprised: What surprised you?, How did you react to the surprise?, Tell me more about your experience.
+curious: What are you curious about?, Let's explore that together., How can I satisfy your curiosity?
+relaxed: What helps you relax?, Describe your ideal relaxation activity., How do you unwind after a long day?
+hello, hi, hey: Hello there!, Hi!, Hey!, How can I assist you today?, What's up?, Greetings!
+good morning: Good morning! Have a great day., Morning! How are you?, Rise and shine!, How can I help you today?
+good afternoon: Good afternoon! How can I assist you?, Afternoon! What can I do for you?, Hello! How's your day going?
+good evening: Good evening! How can I assist you?, Evening! What brings you here?, Hey! How's your evening going?
+howdy: Howdy! What can I do for you?, Howdy partner! How's it going?, Howdy! Ready to chat?
+joke: Why don't scientists trust atoms? Because they make up everything!, What do you call fake spaghetti? An impasta!, Why did the scarecrow win an award? Because he was outstanding in his field!, How does a penguin build its house? Igloos it together!, Why did the tomato turn red? Because it saw the salad dressing!, Did you hear about the mathematician who's afraid of negative numbers? He'll stop at nothing to avoid them!, What did one ocean say to the other ocean? Nothing, they just waved!, Why don't skeletons fight each other? They don't have the guts!, Why couldn't the bicycle stand up by itself? It was two-tired!, What do you call cheese that isn't yours? Nacho cheese!
+success: What do you consider a successful outcome?, How do you define success?, Have you achieved success in this area before?
+failure: What do you think led to this failure?, How do you typically cope with failure?, Is there a lesson you've learned from past failures?
+motivation: What motivates you to pursue your goals?, How do you stay motivated when faced with challenges?, Have you ever experienced a lack of motivation?
+procrastination: What do you usually procrastinate on?, How do you plan to overcome procrastination?, Do you feel guilty when you procrastinate?
+future: How do you envision your future?, What steps are you taking to achieve your future goals?, Are you optimistic about your future?
+past: How does your past influence your present decisions?, Is there anything from your past you'd like to change?, What positive experiences from your past do you cherish?
+identity: How would you describe your identity?, Have you ever struggled with your sense of identity?, What aspects of your identity are most important to you?
+personality: How would you describe your personality?, Do you think personality can change over time?, What personality traits do you admire in others?
+goals: What are your short-term and long-term goals?, How do you plan to achieve your goals?, Have you encountered any obstacles in pursuing your goals?
+career: Tell me about your career aspirations., What do you enjoy most about your current career?, Are there any challenges you face in your career path?
+decision: How do you make important decisions?, What factors do you consider when making a decision?, Have you ever regretted a decision you made?
+ambition: What are your ambitions in life?, How do you plan to fulfill your ambitions?, Do you think ambition is important for success?
+creativity: How do you express your creativity?, What inspires your creative ideas?, Have you ever faced creative blocks?
+communication: How do you communicate effectively with others?, What challenges do you face in communication?, Do you prefer verbal or written communication?
+leadership: What qualities make a good leader?, Have you ever taken on a leadership role?, How do you motivate others as a leader?
+teamwork: How do you contribute to a team environment?, What are the benefits of teamwork?, Have you faced challenges while working in a team?
+friendship: What qualities do you value in a friend?, How do you maintain friendships?, Have you ever had a falling out with a friend?
+trust: How do you build trust in relationships?, What happens when trust is broken?, Is trust important to you?
+loyalty: What does loyalty mean to you?, How do you show loyalty to others?, Have you ever felt betrayed by someone you were loyal to?
+communication: How do you express your thoughts and feelings?, Do you find it easy to communicate with others?, What communication style do you prefer?
+conflict: How do you handle conflicts with others?, What strategies do you use to resolve conflicts?, Have you ever turned conflict into an opportunity for growth?
+empathy: How do you show empathy towards others?, Why is empathy important in relationships?, Have you ever experienced empathy from someone else?
+forgiveness: How do you forgive others for their mistakes?, Is forgiveness important for personal growth?, Have you ever struggled to forgive someone?
+patience: How do you practice patience in your daily life?, What are the benefits of being patient?, Have you ever regretted being impatient?
+perseverance: How do you stay determined in the face of challenges?, What keeps you going when things get tough?, Have you ever achieved something through perseverance?
+self-esteem: How do you maintain a healthy level of self-esteem?, What influences your self-esteem?, Have you ever struggled with low self-esteem?
+self-improvement: What areas of your life do you want to improve?, How do you work on self-improvement?, Have you seen progress in your self-improvement journey?
+gratitude: What are you grateful for in your life?, How do you practice gratitude daily?, How does gratitude impact your overall well-being?
+mindfulness: How do you stay present in the moment?, What benefits do you experience from mindfulness?, How do you incorporate mindfulness into your daily routine?
+meditation: What role does meditation play in your life?, How do you practice meditation?, What benefits have you noticed from meditation?
+stress: How do you manage stress in your life?, What stress-relief techniques do you use?, Have you ever experienced burnout from stress?
+anxiety: How do you cope with feelings of anxiety?, What triggers your anxiety?, Have you sought professional help for anxiety?
+depression: How do you deal with depression on a daily basis?, What strategies help you cope with depressive symptoms?, Have you ever experienced a major depressive episode?
+therapy: Have you ever tried therapy?, What are your thoughts on therapy?, How has therapy helped you?
+self-care: What does self-care look like for you?, How do you prioritize self-care?, What self-care activities do you enjoy?
+exercise: How do you incorporate exercise into your routine?, What benefits do you experience from exercise?, What is your favorite type of exercise?
+nutrition: How do you maintain a balanced diet?, What foods make you feel your best?, Have you ever tried a specific diet plan?
+sleep: How many hours of sleep do you get each night?, What helps you get a good night's sleep?, Have you ever struggled with insomnia?
+hydration: How much water do you drink each day?, What benefits do you notice from staying hydrated?, How do you remind yourself to drink enough water?
+productivity: How do you stay productive throughout the day?, What productivity tools do you use?, How do you overcome procrastination?
+time management: How do you prioritize tasks and manage your time effectively?, What time management techniques do you use?, Have you ever struggled with time management?
+organization: How do you keep your space organized?, What organizational systems work best for you?, Have you ever felt overwhelmed by clutter?
+goal-setting: How do you set and achieve your goals?, What SMART goals are you currently working towards?, Have you accomplished any significant goals recently?
+focus: How do you maintain focus on your tasks?, What distractions do you encounter and how do you overcome them?, Have you ever experienced a flow state?
+motivation: What motivates you to accomplish your goals?, How do you stay motivated during challenging times?, Have you ever lost motivation for something you were passionate about?
+inspiration: Where do you find inspiration in your life?, How do you cultivate creativity and inspiration?, Have you ever inspired others?
+procrastination: How do you avoid procrastination and stay productive?, What strategies do you use to overcome procrastination?, Have you ever procrastinated on something important?
+self-discipline: How do you cultivate self-discipline in your life?, What habits contribute to your self-discipline?, Have you ever struggled with self-discipline?
+resilience: How do you bounce back from setbacks and challenges?, What factors contribute to your resilience?, Have you ever surprised yourself with your resilience?
+adaptability: How do you adapt to changes and unexpected situations?, What mindset helps you embrace change?, Have you ever had to adapt to a major life change?
+problem-solving: How do you approach problem-solving?, What steps do you take to find solutions to challenges?, Have you ever solved a problem in a creative way?
+critical thinking: How do you engage in critical thinking?, What strategies do you use to evaluate information and make decisions?, Have you ever changed your mind based on critical thinking?
+decision-making: How do you make decisions in your life?, What factors do you consider when making a decision?, Have you ever regretted a decision you made?
+risk-taking: How do you approach taking risks?, What risks have you taken in the past?, Have you ever regretted taking a risk?
+creativity: How do you express your creativity?, What activities inspire your creative side?, Have you ever experienced a creative block?
+innovation: How do you foster innovation in your work or personal projects?, What innovative ideas have you implemented?, Have you ever been recognized for your innovative thinking?
+collaboration: How do you collaborate with others effectively?, What are the benefits of collaboration?, Have you ever faced challenges while collaborating with others?
+communication: How do you communicate effectively with others?, What communication skills do you consider important?, Have you ever miscommunicated with someone?
+active listening: How do you practice active listening in conversations?, What benefits do you experience from active listening?, Have you ever felt truly heard by someone?
+empathy: How do you show empathy towards others?, Why is empathy important in relationships?, Have you ever experienced empathy from someone else?
+persuasion: How do you persuade others to see your point of view?, What persuasive techniques do you use?, Have you ever been persuaded to change your mind?
+negotiation: How do you negotiate effectively?, What strategies do you use to reach a mutually beneficial agreement?, Have you ever successfully negotiated a deal?
+conflict resolution: How do you resolve conflicts in relationships?, What steps do you take to find a resolution?, Have you ever mediated a conflict between others?
+stress management: How do you manage stress in your life?, What stress-relief techniques do you use?, Have you ever experienced burnout from stress?
+self-care: What does self-care look like for you?, How do you prioritize self-care?, What self-care activities do you enjoy?
+relaxation: How do you unwind and relax after a long day?, What activities help you de-stress?, Have you ever tried relaxation techniques like meditation or yoga?
+mindfulness: How do you practice mindfulness in your daily life?, What benefits do you experience from mindfulness?, Have you ever attended a mindfulness retreat?
+meditation: How do you incorporate meditation into your routine?, What types of meditation do you practice?, Have you noticed any changes in your well-being since starting meditation?
+exercise: What role does exercise play in your life?, How do you stay active and fit?, What are your favorite forms of exercise?
+nutrition: How do you maintain a balanced and healthy diet?, What foods do you prioritize for optimal nutrition?, Have you ever followed a specific dietary plan?
+sleep: How many hours of sleep do you aim for each night?, What helps you get a restful night's sleep?, Have you ever struggled with sleep disorders like insomnia?
+hydration: How much water do you drink daily?, What are the benefits of staying hydrated?, What tips do you have for remembering to drink enough water throughout the day?
+productivity: How do you stay productive and focused?, What productivity tools or techniques do you use?, How do you prioritize tasks to maximize productivity?
+goal-setting: How do you set and achieve your goals?, What SMART goals are you currently working towards?, Have you ever accomplished a significant goal?
+time management: How do you manage your time effectively?, What time management strategies do you use?, How do you balance work, personal life, and leisure time?
+organization: How do you keep your space and schedule organized?, What organizational systems work best for you?, How do you declutter and simplify your life?
+creativity: How do you nurture and express your creative side?, What inspires your creativity?, Have you ever pursued a creative hobby or passion project?
+problem-solving: How do you approach solving problems?, What steps do you take to find solutions?, Have you ever solved a complex problem?
+critical thinking: How do you engage in critical thinking?, What methods do you use to analyze information and make decisions?, Have you ever changed your perspective based on critical thinking?
+decision-making: How do you make decisions in your personal and professional life?, What factors do you consider when making a decision?, Have you ever made a difficult decision?
+risk-taking: How do you approach taking risks?, What risks have you taken in the past?, Have you ever regretted taking or not taking a risk?
+innovation: How do you foster innovation in your work or projects?, What innovative ideas have you implemented?, Have you ever been recognized for your innovative thinking?
+adaptability: How do you adapt to changes and challenges?, What mindset helps you embrace change?, Have you ever had to adapt to a major life change?
+resilience: How do you bounce back from setbacks and adversity?, What factors contribute to your resilience?, Have you ever surprised yourself with your resilience?
+self-discipline: How do you cultivate self-discipline in your life?, What habits or routines support your self-discipline?, Have you ever struggled with self-discipline?
+perseverance: How do you stay determined and persistent in pursuing your goals?, What motivates you to keep going?, Have you ever achieved something through perseverance?
+self-awareness: How do you cultivate self-awareness?, What methods do you use for self-reflection?, Have you ever discovered something new about yourself through self-awareness?
+self-compassion: How do you practice self-compassion and kindness towards yourself?, What role does self-compassion play in your well-being?, Have you ever struggled with self-criticism?
+self-acceptance: How do you practice self-acceptance and embrace your flaws?, What does self-acceptance mean to you?, Have you ever felt pressure to change yourself to fit in?
+self-love: How do you nurture self-love and appreciation for yourself?, What practices or affirmations help you cultivate self-love?, Have you ever struggled with self-esteem or self-worth?
+growth mindset: How do you cultivate a growth mindset and embrace challenges?, What benefits do you experience from having a growth mindset?, Have you ever shifted from a fixed mindset to a growth mindset?
+positive thinking: How do you cultivate positive thinking and optimism?, What strategies do you use to reframe negative thoughts?, Have you noticed a difference in your well-being from practicing positive thinking?
+gratitude: How do you practice gratitude and appreciation in your daily life?, What benefits do you experience from gratitude?, Have you ever kept a gratitude journal?
+kindness: How do you show kindness to others and yourself?, What acts of kindness have you experienced or witnessed?, Have you ever been deeply touched by someone's kindness?
+compassion: How do you practice compassion towards others and yourself?, What does compassion mean to you?, Have you ever felt deeply understood and cared for by someone's compassion?
+empathy: How do you show empathy towards others and understand their perspectives?, What role does empathy play in your relationships?, Have you ever felt deeply connected to someone through empathy?
+forgiveness: How do you practice forgiveness towards others and yourself?, What benefits do you experience from forgiveness?, Have you ever experienced healing from forgiving someone?
+joy: What brings you joy and happiness in life?, How do you cultivate joy on a daily basis?, Have you ever experienced pure and unadulterated joy?
+fulfillment: What makes you feel fulfilled and satisfied in life?, How do you pursue a sense of fulfillment?, Have you ever felt completely fulfilled in a moment or accomplishment?
+contentment: How do you find contentment and peace in the present moment?, What does contentment mean to you?, Have you ever experienced deep contentment and serenity?
+weather: How's the weather where you are?
+weekend Plans: Any exciting plans for the weekend?
+hobbies: What do you enjoy doing in your free time?
+travel: Have you been on any interesting trips lately?
+books: Do you have any favorite books or authors?
+music: What type of music do you like listening to?
+food: What's your favorite cuisine?
+restaurant: Tried any new restaurants lately?
+pets: Do you have any pets?
+sports: Are you a fan of any particular sports team?
+fitness: Do you enjoy any specific workouts or sports?
+technology: Have you tried any new gadgets recently?
+gardening: Do you have a green thumb?
+art: Do you enjoy visiting art galleries or museums?
+fashion: What's your go-to outfit or style?
+home: Any recent home decor updates?
+cooking: Do you like experimenting with new recipes?
+baking: Have you baked anything delicious lately?
+photography: Do you like taking photos?
+nature: Have you spent any time outdoors recently?
+volunteering: Do you volunteer for any organizations?
+concert: Have you been to any concerts lately?
+festival: Do you enjoy attending festivals or events?
+language: Are you learning any new languages?
+trivia: Do you enjoy playing trivia games?
+games: Have you played any fun board games lately?
+puzzles: Do you like solving puzzles?
+astrology: Do you believe in astrology?
+zodiac: What's your zodiac sign?
+superstitions: Do you have any superstitions?
+dreams: Do you remember your dreams often?
+memories: What's your favorite childhood memory?
+achievements: What's a recent accomplishment you're proud of?
+goals: Do you have any goals you're working towards?
+bucket list: What's on your bucket list?
+adventures: Have you had any exciting adventures lately?
+challenges: Have you faced any challenges recently?
+life lessons: What's the most valuable lesson you've learned in life?
+positivity: What's something that always brings a smile to your face?
+inspiration: Who inspires you the most?
+motivation: What keeps you motivated on a daily basis?
+kindness: Have you witnessed or experienced any acts of kindness recently?
+generosity: Do you believe in the power of giving?
+gratitude: What are you grateful for today?
+favorite season: What's your favorite season and why?
+holiday traditions: Do you have any special holiday traditions?
+celebrations: Any upcoming celebrations or milestones?
+fact: Share an interesting fact about yourself!
+no match: What does that suggest to you?, I see., I'm not sure I understand you fully., Can you elaborate?, That is quite interesting., That's what the called me in highschool.
+]0;nipper_jj@cobra:~/CSC380/Projects/Prog3[nipper_jj@cobra Prog3]$ exit
+exit
+
+Script done on Mon 01 Apr 2024 06:16:28 PM EDT
